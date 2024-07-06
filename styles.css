@@ -58,4 +58,10 @@ input {
   cursor: pointer;
   background-color: black;
   color: #fff;
+  transition: background-color 1s ease;
+  border: none;
+}
+
+.botao:hover {
+  background-color: #696969;
 }
