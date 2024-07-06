@@ -15,7 +15,7 @@ inputAltura.addEventListener("click", function () {
 
 botao.addEventListener("click", function () {
   const resultadoIMC = calculaIMC();
-  if (resultadoIMC !== undefined) {
+  if (resultadoIMC !== 0) {
     resultado.value = calculaIMC();
   }
 });
@@ -26,12 +26,12 @@ function calculaIMC() {
 
   if (peso <= 0 || peso >= 1000 || isNaN(peso)) {
     window.alert("Peso ou altura estão inválidos");
-    return undefined;
+    return 0;
   }
 
   if (altura <= 0 || isNaN(altura) || altura > 300) {
     window.alert("Peso ou altura estão inválidos");
-    return undefined;
+    return 0;
   }
 
   const alturaMetros = altura / 100;
