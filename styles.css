@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 380px;
+  height: 280px;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.altura,
+.peso,
+.resultado {
+  display: block;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border-width: 1px;
+  width: 100%;
+}
+
+.botao {
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border-width: 1px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+}
