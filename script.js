@@ -13,6 +13,12 @@ inputAltura.addEventListener("click", function () {
   resultado.value = "";
 });
 
+inputAltura.addEventListener("keypress", function (event) {
+  if (event.key === "." || event.key === ",") {
+    event.preventDefault();
+  }
+});
+
 botao.addEventListener("click", function () {
   const resultadoIMC = calculaIMC();
   if (resultadoIMC !== 0) {
